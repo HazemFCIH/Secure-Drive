@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minders</title>
+    <meta name="description" content="Minders is a student activity in Faculty of computers and information systems - Helwan university.
+helps discovering the potentials buried inside students, support and improve them, in order to develop projects that help them get connected to the job market." />
+    <meta name="keywords" content="minders, student, activity, non-profit, organization, SA, Helwan, University, events, first, step, workshops, geeks, FCIH" />
+    <meta name="Author" content="Minders" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/home/Mi-logo.png" />
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css" />
+    <link rel="stylesheet" type="text/css" href="css/slideshow_layouts.css" />
+
+
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  		<style>
+			.ie-message { display: inline-block; }
+  		</style>
+		<![endif]-->
+    <script>
+        document.documentElement.className = 'js';
+
+    </script>
+</head>
+
+<body>
+    <svg class="hidden">
+        <defs>
+            <symbol id="icon-arrow" viewBox="0 0 24 24">
+                <title>arrow</title>
+                <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+            </symbol>
+            <symbol id="icon-drop" viewBox="0 0 24 24">
+                <title>drop</title>
+                <path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z" />
+                <path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
+            </symbol>
+            <symbol id="icon-prev" viewBox="0 0 100 50">
+                <title>prev</title>
+                <polygon points="5.4,25 18.7,38.2 22.6,34.2 16.2,27.8 94.6,27.8 94.6,22.2 16.2,22.2 22.6,15.8 18.7,11.8" />
+            </symbol>
+            <symbol id="icon-next" viewBox="0 0 100 50">
+                <title>next</title>
+                <polygon points="81.3,11.8 77.4,15.8 83.8,22.2 5.4,22.2 5.4,27.8 83.8,27.8 77.4,34.2 81.3,38.2 94.6,25 " />
+            </symbol>
+            <symbol id="icon-octicon" viewBox="0 0 24 24">
+                <title>octicon</title>
+                <path d="M12,2.2C6.4,2.2,1.9,6.7,1.9,12.2c0,4.4,2.9,8.2,6.9,9.6c0.5,0.1,0.7-0.2,0.7-0.5c0-0.2,0-0.9,0-1.7c-2.8,0.6-3.4-1.4-3.4-1.4C5.6,17.1,5,16.8,5,16.8C4.1,16.2,5,16.2,5,16.2c1,0.1,1.5,1,1.5,1c0.9,1.5,2.4,1.1,2.9,0.8c0.1-0.7,0.4-1.1,0.6-1.3c-2.2-0.3-4.6-1.1-4.6-5c0-1.1,0.4-2,1-2.7C6.5,8.8,6.2,7.7,6.7,6.4c0,0,0.8-0.3,2.8,1C10.3,7.2,11.1,7.1,12,7c0.9,0,1.7,0.1,2.5,0.3c1.9-1.3,2.8-1,2.8-1c0.5,1.4,0.2,2.4,0.1,2.7c0.6,0.7,1,1.6,1,2.7c0,3.9-2.4,4.7-4.6,5c0.4,0.3,0.7,0.9,0.7,1.9c0,1.3,0,2.4,0,2.8c0,0.3,0.2,0.6,0.7,0.5c4-1.3,6.9-5.1,6.9-9.6C22.1,6.7,17.6,2.2,12,2.2z" />
+            </symbol>
+            <!-- From Karen Menezes: https://www.smashingmagazine.com/2015/05/creating-responsive-shapes-with-clip-path/ -->
+            <clipPath id="polygon-clip-rhomboid" clipPathUnits="objectBoundingBox">
+                <polygon points="0 1, 0.3 0, 1 0, 0.7 1" />
+            </clipPath>
+        </defs>
+    </svg>
+    <!-- Start NavBar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="img/home/Mi-logo.png" alt="minderslogo" /><span>minders</span></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#header" data-value="header">home</a></li>
+                    <li><a href="#about" data-value="about">about us</a></li>
+                    <li><a href="#events" data-value="events">events</a></li>
+                    <li><a href="#team" data-value="team">team</a></li>
+                    <li><a href="#contact" data-value="contact">contact us</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- End container -->
+    </nav>
+    <!-- End NavBar -->
+    <main>
+
+        <div class="slideshow" tabindex="0" id="header">
+            <div class="slide slide--layout-1" data-layout="layout1">
+                <div class="slide-imgwrap">
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/1.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/2.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/3.jpg);"></div>
+                    </div>
+                </div>
+                <div class="slide__title">
+                    <h3 class="slide__title-main">Now or Never</h3>
+                    <p class="slide__title-sub">Our battered suitcases were piled on the sidewalk again; we had longer ways to go. But no matter, the road is life. <a href="#">Read more</a></p>
+                </div>
+            </div>
+            <!-- /slide -->
+            <div class="slide slide--layout-2" data-layout="layout2">
+                <div class="slide-imgwrap">
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/6.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/5.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/6.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/7.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/9.jpg);">
+                            <h4 class="slide__img-caption">Today is someday</h4></div>
+                    </div>
+                </div>
+                <div class="slide__title">
+                    <h3 class="slide__title-main">Crazy Breed</h3>
+                    <p class="slide__title-sub">There's those thinking more or less less is more. But if less is more how you're keeping score?</p>
+                </div>
+            </div>
+            <!-- /slide -->
+            <div class="slide slide--layout-3" data-layout="layout3">
+                <div class="slide-imgwrap">
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/9.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/10.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/1.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/2.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/3.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/4.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/5.jpg);"></div>
+                    </div>
+                </div>
+                <div class="slide__title">
+                    <h3 class="slide__title-main">Safe Harbor</h3>
+                    <p class="slide__title-sub">Twenty years from now you will be more disappointed by the things you didn’t do than by the ones you did do.</p>
+                </div>
+            </div>
+            <!-- /slide -->
+            <div class="slide slide--layout-4" data-layout="layout4">
+                <div class="slide-imgwrap">
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/6.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/7.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/8.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/9.jpg);"></div>
+                    </div>
+                </div>
+                <div class="slide__title">
+                    <h3 class="slide__title-main">Our Freedom</h3>
+                    <p class="slide__title-sub">For to be free is not merely to cast off one's chains, but to live in a way that respects and enhances the freedom of others.</p>
+                </div>
+            </div>
+            <!-- /slide -->
+
+            <div class="slide slide--layout-6" data-layout="layout6">
+                <div class="slide-imgwrap">
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/10.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/1.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/2.jpg);"></div>
+                    </div>
+                </div>
+                <div class="slide__title">
+                    <h3 class="slide__title-main">Walk the Walk</h3>
+                    <p class="slide__title-sub">The trouble with being in the rat race is that even if you win, you're still a rat.</p>
+                </div>
+            </div>
+            <!-- /slide -->
+            <div class="slide slide--layout-7" data-layout="layout7">
+                <div class="slide-imgwrap">
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/3.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/4.jpg);"></div>
+                    </div>
+                    <div class="slide__img">
+                        <div class="slide__img-inner" style="background-image: url(img/5.jpg);"></div>
+                    </div>
+                </div>
+                <div class="slide__title">
+                    <h3 class="slide__title-main">Caged Birds</h3>
+                    <p class="slide__title-sub">They told me to grow roots, instead I grew wings. Birds born in a cage think flying is an illness. </p>
+                </div>
+            </div>
+            <!-- /slide -->
+            <nav class="slideshow__nav slideshow__nav--arrows">
+                <button id="prev-slide" class="btn btn--arrow" aria-label="Previous slide">
+                    <svg class="icon icon--prev">
+                        <use xlink:href="#icon-prev"></use>
+                    </svg>
+                </button>
+                <button id="next-slide" class="btn btn--arrow" aria-label="Next slide">
+                    <svg class="icon icon--next">
+                        <use xlink:href="#icon-next"></use>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        <!-- /slideshow -->
+
+
+    </main>
+
+
+    <!-- Start About -->
+
+    <div class="about" id="about">
+        <div class="container">
+
+            <div class="title">
+                <h3>about minders</h3>
+
+                <div class="or-spacer">
+                    <div class="mask"></div> <span><img class="logo" src="img/home/Mi_logo_gold.png" alt="mindersgoldenlogo" /></span></div>
+
+            </div>
+
+            <p class="lead wow bounceInDown">Minders is a student activity in the faculty of Computers and information systems, Helwan university,
+                <br> Helps discovering the potentials buried inside students, supports and improves them,
+                <br> in order to develop projects that help them get connected to the job market</p>
+
+            <div class="row">
+                <div class="history">
+
+                    <div class="col-md-4 col-xs-12 wow bounceIn" data-wow-delay="0.5s">
+                        <div class="details more">
+                            <i class="fa fa-clock-o fa-3x" id="fa"></i>
+                            <h1 class="plus timer" data-from="0" data-to="3" data-speed="2000" data-refresh-interval="20"> </h1>
+                            <p>years</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xs-12 wow bounceIn" data-wow-delay="1s">
+                        <div class="details more">
+                            <i class="fa fa-user fa-3x" id="fa"></i>
+                            <h1 class="timer" data-from="0" data-to="40" data-speed="2000" data-refresh-interval="20"></h1>
+                            <p>hardworking members</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xs-12 wow bounceIn" data-wow-delay="1.5s">
+                        <div class="details">
+                            <i class="fa fa-rocket fa-3x" id="fa"></i>
+                            <h1 class="timer" data-from="0" data-to="7" data-speed="2000" data-refresh-interval="20">7</h1>
+                            <p>events</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- End About -->
+
+
+
+    <!-- Start Events -->
+
+    <div class="events" id="events">
+        <div class="events-layer">
+            <div class="container">
+
+                <div class="title">
+                    <h3>latest events</h3>
+                    <div class="or-spacer">
+                        <div class="mask"></div> <span><img class="logo" src="img/home/Mi_logo_gold.png" alt="mindersgoldenlogo" /></span></div>
+                </div>
+
+                <div class="event-slider carousel-fade">
+
+                    <div id="carousel-example-generic" class="carousel slid" data-ride="carousel">
+
+
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slid-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slid-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slid-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="item active">
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 wow bounceInLeft">
+                                        <img src="img/home/scoop.png" alt="02">
+
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12 wow bounceInRight">
+                                        <div class="carousel-caption">
+                                            <h2>scoop with data</h2>
+                                            <p class="lead">Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here,</p>
+                                            <a href="events.html" class="bttn white bttn--style3">SHOW ALL EVENTS<svg class="bttn-icon" viewBox="0 0 24 24"><path d="M10 6l-1.41 1.41 4.58 4.59-4.58 4.59 1.41 1.41 6-6z"/><path d="M0 0h24v24h-24z" fill="none"/></svg></a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="item">
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 wow bounceInLeft">
+                                        <img src="img/home/scoop.png" alt="02">
+
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12 wow bounceInRight">
+                                        <div class="carousel-caption">
+                                            <h2>scoop with data</h2>
+                                            <p class="lead">Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here,</p>
+                                            <a href="events.html" class="bttn white bttn--style3">SHOW ALL EVENTS<svg class="bttn-icon" viewBox="0 0 24 24"><path d="M10 6l-1.41 1.41 4.58 4.59-4.58 4.59 1.41 1.41 6-6z"/><path d="M0 0h24v24h-24z" fill="none"/></svg></a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="item">
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12  wow bounceInLeft">
+                                        <img src="img/home/scoop.png" alt="02">
+
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12 wow bounceInRight">
+                                        <div class="carousel-caption">
+                                            <h2>scoop with data</h2>
+                                            <p class="lead">Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here, Event Description Here,</p>
+                                            <a href="events.html" class="bttn white bttn--style3">SHOW ALL EVENTS<svg class="bttn-icon" viewBox="0 0 24 24"><path d="M10 6l-1.41 1.41 4.58 4.59-4.58 4.59 1.41 1.41 6-6z"/><path d="M0 0h24v24h-24z" fill="none"/></svg></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- End Carousel -->
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- End Events -->
+
+    <!-- start sponsers-->
+
+    <section class="sponsers">
+
+        <div class="container">
+
+            <h3 class="text-center">OUR SPONSERS</h3>
+            <div class="or-spacer">
+                <div class="mask"></div> <span><img class="logo" src="img/home/Mi_logo_gold.png" alt="mindersgoldenlogo" /></span></div>
+            <div id="timeline">
+                <div class="timeline-item  wow bounceInLeft">
+                    <div class="timeline-icon">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                            <path fill="#fed600" d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
+	c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
+	l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
+	c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
+	c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z" />
+                        </svg>
+
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Expert Company (Anual Sponser)</h4>
+                        <img src="img/expert.jpg" alt="Expert">
+                        <p>
+                            Expert Company for project management was established in mid-2013 and was founded by a couple of friends of project management professionals who combined scientific and practical expertise. The company's strategy emerged from the selection of its name by the owners. Expert for training targeted a new generation of experts where Expert = Knowledge + Experience + Skills.
+
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="timeline-item wow bounceInRight">
+                    <div class="timeline-icon">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                            <g>
+                                <path fill="#fed600" d="M17.92,3.065l-1.669-2.302c-0.336-0.464-0.87-0.75-1.479-0.755C14.732,0.008,7.653,0,7.653,0v5.6
+		c0,0.096-0.047,0.185-0.127,0.237c-0.081,0.052-0.181,0.06-0.268,0.02l-1.413-0.64C5.773,5.183,5.69,5.183,5.617,5.215l-1.489,0.65
+		c-0.087,0.038-0.19,0.029-0.271-0.023c-0.079-0.052-0.13-0.141-0.13-0.235V0H2.191C1.655,0,1.233,0.434,1.233,0.97
+		c0,0,0.025,15.952,0.031,15.993c0.084,0.509,0.379,0.962,0.811,1.242l2.334,1.528C4.671,19.905,4.974,20,5.286,20h10.307
+		c1.452,0,2.634-1.189,2.634-2.64V4.007C18.227,3.666,18.12,3.339,17.92,3.065z M16.42,17.36c0,0.464-0.361,0.833-0.827,0.833H5.341
+		l-1.675-1.089h10.341c0.537,0,0.953-0.44,0.953-0.979V2.039l1.459,2.027V17.36L16.42,17.36z" />
+                            </g>
+                        </svg>
+
+                    </div>
+                    <div class="timeline-content right">
+                        <h4>TYT (Hosting Sponser)</h4>
+                        <img src="img/TYT.png" alt="TYT">
+                        <p>
+                            TYT " Take Your Time " Visit our new branch at Garden City and enjoy the best atmosphere for work and study! Experience our VIP Area which totally prepared for freelancers to focus and complete their tasks efficiently, and for students as well. Our address: 10 Dr handusa Street, Medical Lab Building, 5th floor, in front of New Qasr Eleiny Hospital. Phone: 0227929771 – 0227929774 – 0227929775 .
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Sponsers-->
+
+
+
+
+    <!-- Start Team -->
+
+    <div class="team" id="team">
+        <div class="team-layer">
+            <div class="container">
+
+                <div class="caption wow bounceInDown">
+                    <h2>Wanna meet <br/>the people behind Minders?</h2>
+                    <a href="team.html" class="bttn white bttn--style3">MEET OUR TEAM<svg class="bttn-icon" viewBox="0 0 24 24"><path d="M10 6l-1.41 1.41 4.58 4.59-4.58 4.59 1.41 1.41 6-6z"/><path d="M0 0h24v24h-24z" fill="none"/></svg></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- End Team -->
+
+    <section class="contact" id="contact">
+        <div class="row">
+            <div class="container">
+                <div class="title">
+                    <h3>let`s have a talk</h3>
+
+                    <div class="or-spacer">
+                        <div class="mask"></div> <span><img class="logo" src="img/home/Mi_logo_gold.png" alt="mindersgoldenlogo" /></span></div>
+                </div>
+
+                <p class="lead wow bounceInDown">
+                    We wanna hear from you :)
+                    <br> What you need, what you dream of, what you want from Minders?
+                    <br> It’s your space, speak freely whatever you want!
+                </p>
+                <form method="post" action="index.php">
+                    <div class="col-md-6 wow bounceInLeft">
+                        <div class="mat-div">
+                            <label for="first-name" class="mat-label">YOUR NAME</label>
+                            <input type="text" class="mat-input">
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 wow bounceInRight">
+                        <div class="mat-div">
+                            <label for="email" class="mat-label">YOUR EMAIL</label>
+                            <input type="text" class="mat-input">
+                        </div>
+                    </div>
+                    <div class="col-md-12  wow bounceInUp">
+
+                        <div class="mat-div">
+                            <label for="address" class="mat-label">YOUR MESSAGE</label>
+                            <textarea type="text" class="mat-input"></textarea>
+                        </div>
+                        <input type="submit" value="SEND MESSAGE" name="submit">
+
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+
+        <div class="footer-co">
+            <div class="row">
+
+                <div class="container">
+
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="so-box">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMindersFCIH%2F&tabs=timeline&width=350&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="230" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+                        </div>
+
+                        <div class="so-box">
+                            <a class="twitter-timeline" data-width="350" data-height="230" href="https://twitter.com/MindersFCIH">Tweets by MindersFCIH</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="so-box">
+                            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                                <div style="padding:8px;">
+                                    <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;">
+                                        <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div>
+                                    </div>
+                                    <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/tc3pxiJWC1/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Nothing #Impossible with Insistence</a></p>
+                                    <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A photo posted by Minders (@mindersfcih) on
+                                        <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2014-09-27T13:44:48+00:00">Sep 27, 2014 at 6:44am PDT</time>
+                                    </p>
+                                </div>
+                            </blockquote>
+                            <script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 text-left">
+                        <h3>Remember</h3>
+                        <p class="qoute">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+                        <h3 class="text-left">Site Map</h3>
+                        <ul class="map">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Our Events</a></li>
+                            <li><a href="#">Sponsers</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                        <h3>Follow Us</h3>
+
+                        <div class="socials text-center pull-left">
+                            <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                            <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                            <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                            <a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
+                            <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </footer>
+    <div class="rights">
+        <p class="lead">&copy; 2016 Minders FCIH. All rights resevered.</p>
+        <p class="lead">Designed by Minders.</p>
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+
+    <script src="js/plugins.js"></script>
+
+
+    <script>
+        $(document).ready(
+
+            function() {
+
+                $("html").niceScroll({
+
+
+                    cursorcolor: "#fed600",
+                    cursorwidth: "7px",
+                    cursorborderradius: "0px",
+                    cursorborder: "0px"
+                });
+
+            }
+
+        );
+        new WOW().init();
+
+    </script>
+    <script>
+        (function() {
+            var slideshow = new MLSlideshow(document.querySelector('.slideshow'));
+
+            document.querySelector('#next-slide').addEventListener('click', function() {
+                slideshow.next();
+            });
+
+            document.querySelector('#prev-slide').addEventListener('click', function() {
+                slideshow.prev();
+            });
+        })();
+
+    </script>
+
+
+</body>
+
+</html>
